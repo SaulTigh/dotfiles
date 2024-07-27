@@ -7,30 +7,20 @@ return {
     cmd = { "ToggleTerm" },
     keys = {
       {
-        "<leader>Tf",
-        function()
-          local count = vim.v.count1
-          require("toggleterm").toggle(count, 0, Util.root.get(), "float")
-        end,
-        desc = "ToggleTerm (float root_dir)",
-      },
-      {
-        "<leader>Th",
+        "<leader>fT",
         function()
           local count = vim.v.count1
           require("toggleterm").toggle(count, 15, Util.root.get(), "horizontal")
         end,
-        desc = "ToggleTerm (horizontal root_dir)",
+        desc = "Terminal",
       },
       {
-        "<leader>Tn",
-        "<cmd>ToggleTermSetName<cr>",
-        desc = "Set term name",
-      },
-      {
-        "<leader>Ts",
-        "<cmd>TermSelect<cr>",
-        desc = "Select term",
+        "<leader>ft",
+        function()
+          local count = vim.v.count1
+          require("toggleterm").toggle(count, 15, Util.root.get(), "horizontal")
+        end,
+        desc = "Terminal",
       },
     },
     opts = {

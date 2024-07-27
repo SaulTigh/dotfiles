@@ -10,8 +10,8 @@ require("lazy").setup({
   -- [telescope.filter_symbols]: class, constructor, enum, field, function, interface, method, module, namespace, package, property, struct, trait symbol(s) were not part of the query results
   spec = {
     opts = {
-      -- colorscheme = "catppuccin",
-      colorscheme = "tokyonight-night",
+      colorscheme = "catppuccin",
+      -- colorscheme = "tokyonight-night",
     },
     -- add LazyVim and import its plugins
     {
